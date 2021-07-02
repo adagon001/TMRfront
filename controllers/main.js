@@ -6,3 +6,9 @@ module.exports.getView = controllerWrapper((req, res, next) => {
     pageTitle: 'index',
   });
 });
+
+module.exports.loginView = controllerWrapper((req, res, next) => {
+  res.status(200).render('index', {
+    pageTitle: 'login',
+  });
+});
